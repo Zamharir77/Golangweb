@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Task Web </title>
+</head>
+<body>
+    <div class="container">
+      <h3>List Task</h3>
+      <table border="1" id="task-list" class="styled-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Assignee</th>
+            <th>Deadline</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            {{ .task }}
+            {{ .assignee }}
+            {{ .deadline }}
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
